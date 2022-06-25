@@ -2,7 +2,7 @@
 
 // 古典的なforループ
 function searchMaxNumber1(numbers) {
-  let maxNumber = numbers[0]
+  let maxNumber = -Infinity
   for (let i = 0; i < numbers.length; i++) {
     if (maxNumber < numbers[i]) {
       maxNumber = numbers[i]
@@ -13,7 +13,7 @@ function searchMaxNumber1(numbers) {
 
 // for ofループ
 function searchMaxNumber2(numbers) {
-  let maxNumber = numbers[0]
+  let maxNumber = -Infinity
   for (const number of numbers) {
     if (maxNumber < number) {
       maxNumber = number
@@ -24,7 +24,7 @@ function searchMaxNumber2(numbers) {
 
 // for inループ
 function searchMaxNumber3(numbers) {
-  let maxNumber = numbers[0]
+  let maxNumber = -Infinity
   for (const i in numbers) {
     if (maxNumber < numbers[i]) {
       maxNumber = numbers[i]
